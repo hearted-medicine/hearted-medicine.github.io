@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yu Gothic", sans-serif;
+    font-size: 16px;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    touch-action: manipulation;
+}
+
+html, body {
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header.float {
+    position: absolute;
+    z-index: 1825;
+}
+
+header .lang-select {
+    float: left;
+    padding: 8px;
+
+}
+
+header .lang-select select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none transparent;
+    vertical-align: middle;
+    font-size: inherit;
+    color: inherit;
+    box-sizing: content-box;
+}
+
+header .logo {
+    margin: auto;
+    font-size: 36px;
+    font-family: "Monsieur La Doulaise", "Yu Gothic", sans-serif;
+}
+
+.sns {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    z-index: 1825;
+    display: flex;
+    flex-direction: column;
+}
+
+.sns a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    header .logo {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    header .logo {
+        font-size: 11px;
+    }
+}
+
+header .links {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 4px;
+}
+
+header .links a {
+    color: black;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 0 16px;
+}
+
+.wrapper .reload {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 4px 0 #000000;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Yu Gothic", sans-serif;
+    font-size: 20px;
+}
+
+.main-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 740px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-panel a {
+    text-decoration: none;
+}
+
+.main-panel .panel-with-photo {
+    width: 45%;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-panel .panel-subtitle {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
+
+.main-panel .panel-normal {
+    background-color: white;
+    width: 45%;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: black solid 2px;
+}
+
+.panel-normal .panel-subtitle {
+    color: black;
+    font-size: 150%;
+    padding: 16px;
+    -webkit-text-stroke: 4px white;
+    text-stroke: 4px white;
+    paint-order: stroke;
+}
+
+.panel-normal .panel-title {
+    font-size: 150%;
+    color: black;
+}
+
+.panel-with-photo .panel-subtitle {
+    color: white;
+    font-size: 200%;
+    padding: 16px;
+    -webkit-text-stroke: 4px black;
+    text-stroke: 4px black;
+    paint-order: stroke;
+}
+
+.panel-with-photo .panel-title {
+    /*
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    */
+    color: white;
+    font-size: 150%;
+
+    padding: 8px 16px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: #FFFFFF solid 1px;
+
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 16px;
+    padding: 16px;
+    text-align: center;
+    background-color: #9FE0D5;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.inquiry-image {
+    background-image: url('./img/inquiry.jpg');
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 550px) {
+    .inquiry-image {
+        height: 25vh;
+    }
+}
+
+h1 {
+    font-size: 200%;
+}
+
+div.pre {
+    white-space: pre-wrap;
+}
