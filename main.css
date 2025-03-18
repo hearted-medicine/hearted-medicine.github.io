@@ -58,7 +58,7 @@ header .logo {
 
 .sns {
     position: absolute;
-    top: 32px;
+    top: 128px;
     right: 32px;
     z-index: 1825;
     display: flex;
