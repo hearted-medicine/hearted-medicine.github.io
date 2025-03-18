@@ -277,7 +277,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .img-frame .text span {
+    .img-frame {
         height: 50vh;
     }
     header.float {
